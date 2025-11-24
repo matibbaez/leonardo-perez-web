@@ -49,13 +49,13 @@ import Navbar from '../components/Navbar.astro';
                 </div>
             </div>
 
-            <div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+            <!-- <div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl border-4 border-white">
                  <img 
                     src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                     alt="Estudio Jurídico Dr. Pérez" 
                     class="w-full h-full object-cover"
                 />
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -63,10 +63,10 @@ import Navbar from '../components/Navbar.astro';
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 
-                <div class="w-full lg:w-5/12 relative">
+                <div class="w-full lg:w-5/15 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-slate-50">
                         <img 
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" 
+                            src="/images/LeonardoSitioWeb.png"
                             alt="Dr. Leonardo Perez" 
                             class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
                         />
@@ -83,10 +83,10 @@ import Navbar from '../components/Navbar.astro';
                     
                     <div class="text-slate-600 text-lg leading-relaxed space-y-4">
                         <p>
-                            Egresado de la <strong>Universidad de Buenos Aires (UBA)</strong> y con más de 15 años caminando los tribunales de Lomas de Zamora y Lanús.
+                            Egresado de la <strong>Universidad de Buenos Aires (UBA)</strong> y con más de 15 años de trayectoria profesional en los <strong>Tribunales de Provincia de Buenos Aires</strong>, especializado en el fuero de Familia y Laboral.
                         </p>
                         <p>
-                            Fundé este estudio con una premisa clara: <strong>terminar con el "abogado inalcanzable"</strong>. Creo en el trato directo, en hablar sin tecnicismos y en pelear cada expediente como si fuera propio.
+                            Fundé este estudio con una premisa clara: <strong>un trato directo y una comunicación sin tecnicismos</strong>. Creemos firmemente en abordar cada caso con dedicación total, como si fuera propio.
                         </p>
                         <p>
                             Mi especialidad es proteger el patrimonio y los derechos de las familias trabajadoras, ya sea ante un despido injusto, un divorcio complejo o el trámite de su jubilación.
@@ -223,7 +223,7 @@ import Navbar from '../components/Navbar.astro';
         </div>
     </section>
 
-    <section class="py-20 bg-white border-y border-slate-100">
+    <section class="py-20 bg-100 border-y border-slate-100">
         <div class="container mx-auto px-6">
             
             <div class="text-center mb-16 max-w-3xl mx-auto">
@@ -304,6 +304,92 @@ import Navbar from '../components/Navbar.astro';
                 </a>
             </div>
 
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-navy-900 font-bold mb-4">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="text-slate-500 text-lg">
+                    Respuestas claras para iniciar su consulta legal con total tranquilidad.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 max-w-5xl mx-auto"> 
+                
+                <div class="space-y-4">
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Cobran la primera consulta?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 1: Definir si es sin cargo o si es una tarifa fija por la hora de consulta. Ejemplo: "Sí, la primera consulta tiene un costo de $X, que se bonifica si el cliente decide iniciar el trámite con nuestro estudio. Esto asegura una dedicación profunda a su caso desde el inicio."]
+                        </p>
+                    </details>
+                    
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Cuánto tiempo tarda un juicio laboral/divorcio?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 2: Explicación honesta. Ejemplo: "La duración de un juicio varía significativamente según el juzgado y la complejidad del caso. No obstante, nuestro compromiso es mantenerlo informado sobre cada plazo y etapa, buscando siempre la resolución más eficiente para sus intereses."]
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Qué documentación necesito para iniciar mi jubilación?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 3: Documentación básica: DNI, historia laboral, etc. Ejemplo: "Para iniciar su trámite jubilatorio, generalmente se requiere DNI, constancia de CUIL, historia laboral (saberes y servicios), y documentación específica según el tipo de jubilación. Le asesoraremos en cada paso para recolectar lo necesario."]
+                        </p>
+                    </details>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Trabajan con honorarios de éxito (cuota litis)?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 4: Explicación de honorarios: Cuota litis o Pago fijo. Ejemplo: "Sí, en muchos casos ofrecemos la modalidad de honorarios a resultado (cuota litis), lo que significa que nuestros honorarios se pagan de lo que usted reciba. Esto le da tranquilidad y alineación de intereses."]
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Puedo hacer la consulta online/virtual?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 5: Sí, a través de videollamada o WhatsApp. Útil para cliente de Provincia/CABA. Ejemplo: "Ofrecemos consultas virtuales a través de videollamada (Google Meet, Zoom) o WhatsApp para su comodidad, eliminando barreras geográficas y adaptándonos a su agenda."]
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
+                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
+                            ¿Manejan casos en Capital Federal?
+                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
+                        </summary>
+                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
+                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
+                            [RESPUESTA 6: Sí, trabajamos en las jurisdicciones de Lomas, San Isidro, etc. Ejemplo: "Principalmente actuamos en la Provincia de Buenos Aires, en los Departamentos Judiciales de San Martín, Lomas de Zamora y San Isidro, pero evaluamos casos en CABA según su complejidad."]
+                        </p>
+                    </details>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -429,5 +515,12 @@ import Navbar from '../components/Navbar.astro';
             </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/5491157203891?text=Hola%20Dr.%20Pérez,%20quisiera%20iniciar%20una%20evaluación%20de%20mi%20caso." 
+    class="fixed bottom-4 right-4 md:hidden bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-xl hover:bg-[#128C7E] transition-colors z-[100] transform active:scale-95">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.04 2C6.58 2 2.14 6.46 2.14 11.92C2.14 13.66 2.6 15.34 3.47 16.85L2 22.02L7.38 20.6C8.83 21.43 10.46 21.86 12.04 21.86C17.5 21.86 21.94 17.41 21.94 11.95C21.94 6.49 17.5 2.04 12.04 2.04ZM17.15 16.51C16.92 16.9 15.68 17.44 15.3 17.56C14.92 17.68 14.33 17.71 13.73 17.54C13.13 17.37 11.45 16.83 9.43 15.18C7.87 13.95 6.81 12.37 6.52 11.87C6.23 11.37 6.44 11.19 6.64 10.98C6.84 10.77 7.12 10.37 7.35 10.09C7.59 9.81 7.67 9.63 7.79 9.39C7.91 9.15 7.85 9.04 7.76 8.84C7.67 8.64 7.09 7.21 6.84 6.6C6.58 5.99 6.32 6.09 6.13 6.09C5.95 6.09 5.69 6.09 5.43 6.09C5.17 6.09 4.75 6.19 4.39 6.69C4.04 7.19 3.1 8.08 3.1 9.94C3.1 11.8 4.45 13.62 4.69 13.98C4.93 14.34 7.42 18.25 11.14 19.86C12.04 20.25 12.78 20.48 13.38 20.66C13.98 20.84 14.54 20.81 14.96 20.73C15.52 20.64 16.68 20.08 16.92 19.34C17.16 18.6 17.16 17.98 17.07 17.81C16.98 17.64 16.92 17.42 16.65 17.15L17.15 16.51Z"/>
+        </svg>
+    </a>
 
 </Layout>
