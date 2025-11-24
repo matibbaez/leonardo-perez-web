@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import FAQItem from '../components/FAQItem.astro'; 
 ---
 
 <Layout title="Estudio Jurídico Leonardo Perez | Lanús">
@@ -59,20 +60,20 @@ import Navbar from '../components/Navbar.astro';
         </div>
     </header>
 
-    <section id="sobre-mi" class="py-20 bg-slate-200 relative overflow-hidden">
+    <section id="sobre-mi" class="py-20 lg:py-32 bg-stone-50 relative overflow-hidden">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 
-                <div class="w-full lg:w-5/15 relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-slate-50">
+                <div class="w-full lg:w-5/12 relative">
+                    <div class="relative rounded-2xl shadow-2xl border-4 border-slate-200 bg-white h-[550px] flex items-end justify-center">
                         <img 
-                            src="/images/LeonardoSitioWeb.png"
-                            alt="Dr. Leonardo Perez" 
-                            class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            src="/images/LeonardoSitioWeb.png" alt="Dr. Leonardo Perez" 
+                            class="w-full h-full object-cover object-top contrast-125 hover:grayscale transition-all duration-500" 
+                            style="object-position: 75% 10%;"
                         />
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-slate-100 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-100 rounded-full -z-10 opacity-70"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-slate-100 rounded-full -z-10 opacity-70"></div>
                 </div>
 
                 <div class="w-full lg:w-7/12 space-y-6">
@@ -83,13 +84,13 @@ import Navbar from '../components/Navbar.astro';
                     
                     <div class="text-slate-600 text-lg leading-relaxed space-y-4">
                         <p>
-                            Egresado de la <strong>Universidad de Buenos Aires (UBA)</strong> y con más de 15 años de trayectoria profesional en los <strong>Tribunales de Provincia de Buenos Aires</strong>, especializado en el fuero de Familia y Laboral.
+                            Egresado de la <strong>Universidad de Buenos Aires (UBA)</strong> y con más de 15 años de trayectoria profesional en los Tribunales de Provincia de Buenos Aires, especializado en el fuero de Familia y Laboral.
                         </p>
                         <p>
                             Fundé este estudio con una premisa clara: <strong>un trato directo y una comunicación sin tecnicismos</strong>. Creemos firmemente en abordar cada caso con dedicación total, como si fuera propio.
                         </p>
                         <p>
-                            Mi especialidad es proteger el patrimonio y los derechos de las familias trabajadoras, ya sea ante un despido injusto, un divorcio complejo o el trámite de su jubilación.
+                            Mi especialidad es la <strong>protección de los derechos del niño</strong>, trámite de alimentos y cuidado personal, siempre velando por los derechos de las minorías. Ofrecemos total cobertura en su caso.
                         </p>
                     </div>
 
@@ -103,7 +104,6 @@ import Navbar from '../components/Navbar.astro';
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -242,7 +242,7 @@ import Navbar from '../components/Navbar.astro';
             <div class="grid md:grid-cols-3 gap-8">
                 
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 relative group">
-                    <div class="absolute top-6 right-8 text-6xl text-blue-100 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
+                    <div class="absolute top-6 right-8 text-6xl text-blue-300 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
                     
                     <div class="flex text-yellow-400 mb-4">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -266,7 +266,7 @@ import Navbar from '../components/Navbar.astro';
                 </div>
 
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 relative group">
-                    <div class="absolute top-6 right-8 text-6xl text-blue-100 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
+                    <div class="absolute top-6 right-8 text-6xl text-blue-300 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
                     <div class="flex text-yellow-400 mb-4">★★★★★</div>
                     <p class="text-slate-700 italic mb-6 leading-relaxed">
                         "Excelente profesional, muchas gracias por tu dedicación. Altamente recomendable."
@@ -281,7 +281,7 @@ import Navbar from '../components/Navbar.astro';
                 </div>
 
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 relative group">
-                    <div class="absolute top-6 right-8 text-6xl text-blue-100 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
+                    <div class="absolute top-6 right-8 text-6xl text-blue-300 font-serif opacity-50 group-hover:opacity-100 transition-opacity">”</div>
                     <div class="flex text-yellow-400 mb-4">★★★★★</div>
                     <p class="text-slate-700 italic mb-6 leading-relaxed">
                         "Excelente profesional. Se resolvió todo en muy buen tiempo."
@@ -321,73 +321,37 @@ import Navbar from '../components/Navbar.astro';
             <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 max-w-5xl mx-auto"> 
                 
                 <div class="space-y-4">
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Cobran la primera consulta?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 1: Definir si es sin cargo o si es una tarifa fija por la hora de consulta. Ejemplo: "Sí, la primera consulta tiene un costo de $X, que se bonifica si el cliente decide iniciar el trámite con nuestro estudio. Esto asegura una dedicación profunda a su caso desde el inicio."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Cobran la primera consulta?" 
+                        answer="[RESPUESTA 1: Definir si es sin cargo o si es una tarifa fija por la hora de consulta. Ejemplo: 'Sí, la primera consulta tiene un costo de $X, que se bonifica si el cliente decide iniciar el trámite con el estudio. Esto asegura una dedicación profunda a su caso desde el inicio.']" 
+                    />
                     
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Cuánto tiempo tarda un juicio laboral/divorcio?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 2: Explicación honesta. Ejemplo: "La duración de un juicio varía significativamente según el juzgado y la complejidad del caso. No obstante, nuestro compromiso es mantenerlo informado sobre cada plazo y etapa, buscando siempre la resolución más eficiente para sus intereses."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Cuánto tiempo tarda un juicio laboral o divorcio?" 
+                        answer="[RESPUESTA 2: Explicación honesta. Ejemplo: 'La duración de un juicio varía significativamente según el juzgado y la complejidad del caso. No obstante, nuestro compromiso es mantenerlo informado sobre cada plazo.']" 
+                    />
 
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Qué documentación necesito para iniciar mi jubilación?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 3: Documentación básica: DNI, historia laboral, etc. Ejemplo: "Para iniciar su trámite jubilatorio, generalmente se requiere DNI, constancia de CUIL, historia laboral (saberes y servicios), y documentación específica según el tipo de jubilación. Le asesoraremos en cada paso para recolectar lo necesario."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Qué documentación necesito para iniciar mi jubilación?" 
+                        answer="[RESPUESTA 3: Documentación básica: DNI, historia laboral, etc. Ejemplo: 'Para iniciar su trámite jubilatorio, generalmente se requiere DNI, constancia de CUIL, historia laboral (saberes y servicios), y documentación específica. Le asesoraremos en cada paso.']" 
+                    />
                 </div>
 
                 <div class="space-y-4">
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Trabajan con honorarios de éxito (cuota litis)?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 4: Explicación de honorarios: Cuota litis o Pago fijo. Ejemplo: "Sí, en muchos casos ofrecemos la modalidad de honorarios a resultado (cuota litis), lo que significa que nuestros honorarios se pagan de lo que usted reciba. Esto le da tranquilidad y alineación de intereses."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Trabajan con honorarios de éxito (cuota litis)?" 
+                        answer="[RESPUESTA 4: Explicación de honorarios: Cuota litis o Pago fijo. Ejemplo: 'Sí, en muchos casos ofrecemos la modalidad de honorarios a resultado (cuota litis), lo que significa que nuestros honorarios se pagan de lo que usted reciba.']" 
+                    />
 
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Puedo hacer la consulta online/virtual?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 5: Sí, a través de videollamada o WhatsApp. Útil para cliente de Provincia/CABA. Ejemplo: "Ofrecemos consultas virtuales a través de videollamada (Google Meet, Zoom) o WhatsApp para su comodidad, eliminando barreras geográficas y adaptándonos a su agenda."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Puedo hacer la consulta online/virtual?" 
+                        answer="[RESPUESTA 5: Sí, a través de videollamada o WhatsApp. Útil para cliente de Provincia/CABA. Ejemplo: 'Ofrecemos consultas virtuales a través de videollamada para su comodidad, adaptándonos a su agenda.']" 
+                    />
 
-                    <details class="bg-white p-5 rounded-lg shadow-md border-b-2 border-azure/30 transition-all duration-300 open:bg-blue-50/50 open:shadow-lg cursor-pointer group">
-                        <summary class="font-bold text-navy-900 list-none flex justify-between items-center text-lg">
-                            ¿Manejan casos en Capital Federal?
-                            <span class="text-azure text-2xl transform transition-transform duration-300 group-open:rotate-45 font-light">+</span>
-                        </summary>
-                        <p class="text-slate-600 pt-3 text-sm leading-relaxed border-t border-slate-200 mt-3 min-h-[80px]">
-                            <span class="text-navy-900 font-bold block mb-1">Respuesta:</span>
-                            [RESPUESTA 6: Sí, trabajamos en las jurisdicciones de Lomas, San Isidro, etc. Ejemplo: "Principalmente actuamos en la Provincia de Buenos Aires, en los Departamentos Judiciales de San Martín, Lomas de Zamora y San Isidro, pero evaluamos casos en CABA según su complejidad."]
-                        </p>
-                    </details>
+                    <FAQItem 
+                        title="¿Manejan casos en Capital Federal?" 
+                        answer="[RESPUESTA 6: Sí, trabajamos en Capital Federal. Ejemplo: 'Principalmente actuamos en la Provincia de Buenos Aires, pero evaluamos casos en CABA según su complejidad para representarlo.']" 
+                    />
                 </div>
             </div>
         </div>
@@ -491,8 +455,8 @@ import Navbar from '../components/Navbar.astro';
                 <div>
                     <h4 class="font-bold text-white uppercase tracking-widest mb-6 text-xs border-b border-blue-700 pb-2 inline-block">El Estudio</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-white">Inicio</a></li>
-                        <li><a href="#" class="hover:text-white">Sobre el Dr. Pérez</a></li>
+                        <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="hover:text-white">Sobre el Dr. Pérez</a></li>
                         <li><a href="#ubicacion" class="hover:text-white">Nuestra Ubicación</a></li>
                     </ul>
                 </div>
@@ -517,7 +481,7 @@ import Navbar from '../components/Navbar.astro';
     </footer>
 
     <a href="https://wa.me/5491157203891?text=Hola%20Dr.%20Pérez,%20quisiera%20iniciar%20una%20evaluación%20de%20mi%20caso." 
-    class="fixed bottom-4 right-4 md:hidden bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-xl hover:bg-[#128C7E] transition-colors z-[100] transform active:scale-95">
+    class="fixed bottom-4 right-4 md:hidden bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-xl hover:bg-[#128C7E] transition-colors z-100 transform active:scale-95">
         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.04 2C6.58 2 2.14 6.46 2.14 11.92C2.14 13.66 2.6 15.34 3.47 16.85L2 22.02L7.38 20.6C8.83 21.43 10.46 21.86 12.04 21.86C17.5 21.86 21.94 17.41 21.94 11.95C21.94 6.49 17.5 2.04 12.04 2.04ZM17.15 16.51C16.92 16.9 15.68 17.44 15.3 17.56C14.92 17.68 14.33 17.71 13.73 17.54C13.13 17.37 11.45 16.83 9.43 15.18C7.87 13.95 6.81 12.37 6.52 11.87C6.23 11.37 6.44 11.19 6.64 10.98C6.84 10.77 7.12 10.37 7.35 10.09C7.59 9.81 7.67 9.63 7.79 9.39C7.91 9.15 7.85 9.04 7.76 8.84C7.67 8.64 7.09 7.21 6.84 6.6C6.58 5.99 6.32 6.09 6.13 6.09C5.95 6.09 5.69 6.09 5.43 6.09C5.17 6.09 4.75 6.19 4.39 6.69C4.04 7.19 3.1 8.08 3.1 9.94C3.1 11.8 4.45 13.62 4.69 13.98C4.93 14.34 7.42 18.25 11.14 19.86C12.04 20.25 12.78 20.48 13.38 20.66C13.98 20.84 14.54 20.81 14.96 20.73C15.52 20.64 16.68 20.08 16.92 19.34C17.16 18.6 17.16 17.98 17.07 17.81C16.98 17.64 16.92 17.42 16.65 17.15L17.15 16.51Z"/>
         </svg>
